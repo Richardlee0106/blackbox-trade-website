@@ -947,3 +947,17 @@ section {
         grid-template-columns: 1fr;
     }
 }
+.lang-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+.lang-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--primary);
+}
