@@ -20,10 +20,10 @@
                 </div>
             </div>
             <ul class="nav-links">
-                <li><a href="#about">关于我们</a></li>
-                <li><a href="#services">业务范围</a></li>
-                <li><a href="#advantages">核心优势</a></li>
-                <li><a href="#contact">联系我们</a></li>
+                <li><a href="#home" data-i18n="nav.home">首页</a></li>
+                <li><a href="#about" data-i18n="nav.about">关于我们</a></li>
+                <li><a href="#services" data-i18n="nav.services">业务范围</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">联系我们</a></li>
                 <li><button id="langSwitch" class="lang-btn">中 / EN</button></li>
             </ul>
             <button class="nav-toggle" aria-label="菜单">
@@ -207,8 +207,8 @@
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h3>联系我们</h3>
-                    <p>期待与您的合作，共创贸易新未来</p>
+                    <h3 data-i18n="contact.title">联系我们</h3>
+                    <p data-i18n="contact.desc">期待与您的合作，共创贸易新未来</p>
                     <div class="contact-list">
                         <div class="contact-item">
                             <div class="contact-icon">
@@ -249,22 +249,22 @@
                 <div class="contact-form">
                    <form id="contactForm" action="mailto:generalmanager@blackboxgiant.com" method="GET">
                         <div class="form-group">
-                            <label for="name">您的姓名</label>
+                            <label for="name" data-i18n="contact.name">您的姓名</label>
                             <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">联系邮箱</label>
+                            <label for="email" data-i18n="contact.email">联系邮箱</label>
                             <input type="email" id="email" name="email" placeholder="请输入您的邮箱" required>
                         </div>
                         <div class="form-group">
-                            <label for="company">公司名称</label>
+                            <label for="company" data-i18n="contact.company">公司名称</label>
                             <input type="text" id="company" name="company" placeholder="请输入公司名称">
                         </div>
                         <div class="form-group">
-                            <label for="message">咨询内容</label>
+                            <label for="message" data-i18n="contact.message">咨询内容</label>
                             <textarea id="message" name="message" rows="4" placeholder="请描述您的需求..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-full">发送咨询</button>
+                       <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.send">发送咨询</button>
                     </form>
                 </div>
             </div>
@@ -303,8 +303,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 黑盒子（杭州）贸易有限公司. All rights reserved.</p>
-                <p>浙ICP备XXXXXXXX号</p>
+               <p data-i18n="footer.copyright">© 2026 黑盒子（杭州）贸易有限公司 版权所有</p>
             </div>
         </div>
     </footer>
