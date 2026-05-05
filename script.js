@@ -423,3 +423,63 @@ function throttle(func, limit) {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { debounce, throttle };
 }
+// 多语言切换
+const i18n = {
+  'zh': {
+    'nav.home': '首页',
+    'nav.about': '关于我们',
+    'nav.services': '业务范围',
+    'nav.contact': '联系我们',
+    'contact.title': '联系我们',
+    'contact.desc': '期待与您的合作，共创贸易新未来',
+    'contact.name': '您的姓名',
+    'contact.email': '联系邮箱',
+    'contact.company': '公司名称',
+    'contact.message': '咨询内容',
+    'contact.send': '发送咨询',
+    'footer.about': '关于黑盒子',
+    'footer.service': '客户服务',
+    'footer.copyright': '© 2025 黑盒子（杭州）贸易有限公司 版权所有'
+  },
+  'en': {
+    'nav.home': 'Home',
+    'nav.about': 'About Us',
+    'nav.services': 'Services',
+    'nav.contact': 'Contact Us',
+    'contact.title': 'Contact Us',
+    'contact.desc': 'We look forward to cooperating with you to create a new future of trade.',
+    'contact.name': 'Your Full Name',
+    'contact.email': 'Email Address',
+    'contact.company': 'Company Name',
+    'contact.message': 'Message',
+    'contact.send': 'Send Inquiry',
+    'footer.about': 'About Blackbox',
+    'footer.service': 'Support',
+    'footer.copyright': '© 2025 Blackbox (Hangzhou) Trading Co., Ltd. All Rights Reserved'
+  }
+};
+
+// 切换语言
+let currentLang = localStorage.getItem('lang') || 'zh';
+
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('lang', lang);
+  
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    if (i18n[lang][key]) {
+      el.textContent = i18n[lang][key];
+    }
+  });
+  
+  document.getElementById('langSwitch').textContent = lang === 'zh' ? '中 / EN' : 'EN / 中';
+}
+
+// 绑定按钮
+document.getElementById('langSwitch').addEventListener('click', () => {
+  setLang(currentLang === 'zh' ? 'en' : 'zh');
+});
+
+// 初始化语言
+setLang(currentLang);
