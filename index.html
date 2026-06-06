@@ -253,3 +253,76 @@
                                 <strong data-i18n="contact.phone.label">电话</strong>
                                 <span>+86 13916818604</span>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                   <div class="form-note"><strong data-i18n="form.note.title">建议填写</strong><span data-i18n="form.note.desc">产品类型、规格、数量、目标市场、预算范围、期望交付时间。提交后会直接发送到公司邮箱。</span></div>
+                   <form id="contactForm" action="https://formsubmit.co/generalmanager@blackboxgiant.com" method="POST">
+                        <input type="hidden" name="_subject" value="官网采购咨询 - Blackbox Giant">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://www.blackboxgiant.com/#contact">
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact.name">您的姓名</label>
+                            <input type="text" id="name" name="name" placeholder="请输入您的姓名" data-i18n-placeholder="placeholder.name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact.email">联系邮箱</label>
+                            <input type="email" id="email" name="email" placeholder="请输入您的邮箱" data-i18n-placeholder="placeholder.email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company" data-i18n="contact.company">公司名称</label>
+                            <input type="text" id="company" name="company" placeholder="请输入公司名称" data-i18n-placeholder="placeholder.company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact.message">咨询内容</label>
+                            <textarea id="message" name="message" rows="4" placeholder="例如：需要采购咖啡机、咖啡豆或商用餐饮设备，数量、目标市场、交付时间是..." data-i18n-placeholder="placeholder.message" required></textarea>
+                        </div>
+                       <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.send">提交采购需求</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                       <img src="logo.jpg" alt="Logo" style="width:36px; height:36px; object-fit:cover; border-radius:4px;">
+                        <span data-i18n="footer.brand">黑盒子</span>
+                    </div>
+                    <p><span data-i18n="footer.company">黑盒子（杭州）贸易有限公司</span><br><span data-i18n="footer.desc">咖啡产品与餐饮设备贸易服务</span></p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.quick">快速链接</h4>
+                        <ul>
+                            <li><a href="#about" data-i18n="nav.about">关于我们</a></li>
+                            <li><a href="#services" data-i18n="nav.services">业务范围</a></li>
+                            <li><a href="#advantages" data-i18n="advantages.tag">核心优势</a></li>
+                            <li><a href="#contact" data-i18n="nav.contact">联系我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.support">服务支持</h4>
+                        <ul>
+                            <li><a href="#services" data-i18n="footer.service1">咖啡与设备采购</a></li>
+                            <li><a href="#services" data-i18n="footer.service2">供应链跟进</a></li>
+                            <li><a href="#services" data-i18n="footer.service3">出口交付协同</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+               <p data-i18n="footer.copyright">© 2026 黑盒子（杭州）贸易有限公司 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
