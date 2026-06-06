@@ -961,3 +961,183 @@ section {
   color: var(--text-primary);
   border-color: var(--primary);
 }
+
+
+/* Conversion clarity refinements */
+body {
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.nav-brand .logo span {
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.nav-links .nav-contact-cta {
+    color: #ffffff;
+    background: rgba(99, 102, 241, 0.18);
+    border: 1px solid rgba(129, 140, 248, 0.35);
+}
+
+.hero-title {
+    letter-spacing: 0;
+    max-width: 720px;
+}
+
+.hero-subtitle {
+    max-width: 680px;
+    font-size: 1.18rem;
+    line-height: 1.85;
+    color: #cbd5e1;
+}
+
+.hero-points {
+    display: grid;
+    gap: 12px;
+    margin: 28px 0 0;
+    padding: 0;
+    list-style: none;
+    max-width: 660px;
+}
+
+.hero-points li {
+    position: relative;
+    padding: 12px 16px 12px 42px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #e2e8f0;
+    font-weight: 500;
+}
+
+.hero-points li::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--secondary);
+    transform: translateY(-50%);
+    box-shadow: 0 0 16px rgba(34, 211, 238, 0.7);
+}
+
+.section-header {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title {
+    letter-spacing: 0;
+}
+
+.section-desc,
+.about-card p,
+.service-card p,
+.cta p,
+.contact-info > p,
+.footer-brand p {
+    color: #b6c3d6;
+}
+
+.about-card h3,
+.service-card h3,
+.contact-info h3 {
+    letter-spacing: 0;
+}
+
+.service-card {
+    min-height: 360px;
+}
+
+.service-list li {
+    font-weight: 600;
+}
+
+.form-note {
+    display: grid;
+    gap: 6px;
+    margin-bottom: 24px;
+    padding: 16px 18px;
+    background: rgba(34, 211, 238, 0.08);
+    border: 1px solid rgba(34, 211, 238, 0.22);
+    border-radius: 12px;
+}
+
+.form-note strong {
+    color: var(--text-primary);
+}
+
+.form-note span {
+    color: #b6c3d6;
+    font-size: 0.92rem;
+}
+
+.form-group input,
+.form-group textarea {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .hero-points li {
+        text-align: left;
+    }
+
+    .nav-brand .logo span {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* Image asset refinements */
+.hero-visual {
+    display: grid;
+    gap: 22px;
+    justify-items: center;
+}
+
+.hero-image-card {
+    width: min(100%, 440px);
+    margin: 0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.28), var(--glow-secondary);
+}
+
+.hero-image-card img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.service-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.service-card.featured .service-image {
+    border-color: rgba(255, 255, 255, 0.24);
+}
+
+@media (max-width: 992px) {
+    .hero-image-card {
+        max-width: 520px;
+    }
+}
