@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>黑盒子（杭州）贸易有限公司 | Black Box Trading</title>
-    <meta name="description" content="黑盒子（杭州）贸易有限公司 - 专业贸易服务，连接全球商机">
+    <title>黑盒子（杭州）贸易有限公司 | 咖啡与餐饮设备贸易服务</title>
+    <meta name="description" content="黑盒子（杭州）贸易有限公司专注咖啡机、咖啡豆及商用餐饮设备贸易服务，提供采购、供应链、质检、出口与物流协同支持。">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,14 +16,14 @@
             <div class="nav-brand">
                 <div class="logo">
                     <img src="logo.jpg" alt="Logo" style="width:36px; height:36px; object-fit:cover; border-radius:4px;">
-                    <span>黑盒子（杭州）贸易有限公司</span>
+                    <span data-i18n="brand.full">黑盒子（杭州）贸易有限公司</span>
                 </div>
             </div>
             <ul class="nav-links">
                 <li><a href="#home" data-i18n="nav.home">首页</a></li>
                 <li><a href="#about" data-i18n="nav.about">关于我们</a></li>
                 <li><a href="#services" data-i18n="nav.services">业务范围</a></li>
-                <li><a href="#contact" data-i18n="nav.contact">联系我们</a></li>
+                <li><a href="#contact" data-i18n="nav.contact" class="nav-contact-cta">联系我们</a></li>
                 <li><button id="langSwitch" class="lang-btn">中 / EN</button></li>
             </ul>
             <button class="nav-toggle" aria-label="菜单">
@@ -42,22 +42,29 @@
             <div class="hero-content">
                 <div class="badge">
                     <span class="badge-dot"></span>
-                    专业 · 高效 · 可靠
+                    <span data-i18n="hero.badge">咖啡产品 · 餐饮设备 · 国际贸易</span>
                 </div>
                 <h1 class="hero-title">
-                    连接全球<br>
-                    <span class="gradient-text">贸易新机遇</span>
+                    <span data-i18n="hero.title.line1">咖啡与餐饮设备</span><br>
+                    <span class="gradient-text" data-i18n="hero.title.line2">贸易服务伙伴</span>
                 </h1>
                 <p class="hero-subtitle">
-                    黑盒子（杭州）贸易有限公司致力于为企业提供厨房设备领域专业的国际贸易服务，<br>
-                    以科技驱动贸易创新，助力企业开拓全球市场。
+                    <span data-i18n="hero.subtitle">聚焦咖啡机、咖啡豆及商用餐饮设备贸易，协助客户完成采购寻源、供应链沟通、质量跟进、出口文件与物流衔接。</span>
                 </p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">开始合作</a>
-                    <a href="#about" class="btn btn-secondary">了解更多</a>
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">立即咨询</a>
+                    <a href="#services" class="btn btn-secondary" data-i18n="hero.secondary">查看业务范围</a>
                 </div>
+                <ul class="hero-points">
+                    <li data-i18n="hero.point1">咖啡机 / 咖啡豆 / 商用餐饮设备</li>
+                    <li data-i18n="hero.point2">采购、质检、出口、物流节点协同</li>
+                    <li data-i18n="hero.point3">适合品牌方、经销商与海外采购商</li>
+                </ul>
             </div>
             <div class="hero-visual">
+                <figure class="hero-image-card">
+                    <img src="assets/hero-coffee-trade.svg" alt="咖啡产品与餐饮设备贸易服务视觉图">
+                </figure>
                 <div class="glow-card">
                     <div class="card-content">
                         <div class="floating-icon">
@@ -66,8 +73,8 @@
                                 <path d="M9 12l2 2 4-4"/>
                             </svg>
                         </div>
-                        <h3>一站式贸易解决方案</h3>
-                        <p>从采购到物流，全程无忧</p>
+                        <h3 data-i18n="hero.card.title">从选品到交付的贸易协同</h3>
+                        <p data-i18n="hero.card.desc">让需求、品质和交期更清楚</p>
                     </div>
                     <div class="card-glow"></div>
                 </div>
@@ -84,9 +91,9 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">关于我们</span>
-                <h2 class="section-title">专业贸易，值得信赖</h2>
-                <p class="section-desc">黑盒子聚焦于厨房设备领域，专注于为企业出海提供高效、专业的国际贸易服务</p>
+                <span class="section-tag" data-i18n="about.tag">关于我们</span>
+                <h2 class="section-title" data-i18n="about.title">重点清晰，合作更高效</h2>
+                <p class="section-desc" data-i18n="about.desc">围绕咖啡产品与商用餐饮设备，提供从需求确认到出口交付的贸易支持</p>
             </div>
             <div class="about-grid">
                 <div class="about-card">
@@ -95,8 +102,8 @@
                             <path d="M12 2v20M2 12h20"/>
                         </svg>
                     </div>
-                    <h3>精准定位</h3>
-                    <p>深耕行业多年，精准把握市场需求与供应链资源</p>
+                    <h3 data-i18n="about.card1.title">品类聚焦</h3>
+                    <p data-i18n="about.card1.desc">聚焦咖啡机、咖啡豆与商用餐饮设备，减少泛贸易沟通成本</p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">
@@ -104,8 +111,8 @@
                             <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
-                    <h3>高效执行</h3>
-                    <p>数字化管理系统，ai实时追踪订单进度，高效交付</p>
+                    <h3 data-i18n="about.card2.title">节点清楚</h3>
+                    <p data-i18n="about.card2.desc">从报价、样品、生产、质检到出货，关键进度及时同步</p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">
@@ -113,8 +120,8 @@
                             <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
                     </div>
-                    <h3>安全保障</h3>
-                    <p>严格的质量把控与合规审查，确保交易安全</p>
+                    <h3 data-i18n="about.card3.title">质量跟进</h3>
+                    <p data-i18n="about.card3.desc">关注产品品质、包装要求、出口资料与交付风险</p>
                 </div>
             </div>
         </div>
@@ -124,39 +131,42 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">业务范围</span>
-                <h2 class="section-title">全方位贸易服务</h2>
-                <p class="section-desc">提供从采购到交付的一站式国际贸易解决方案</p>
+                <span class="section-tag" data-i18n="services.tag">业务范围</span>
+                <h2 class="section-title" data-i18n="services.title">客户最关心的事，放在前面</h2>
+                <p class="section-desc" data-i18n="services.desc">明确产品、供应商、质量、文件和物流，让客户更快判断是否适合合作</p>
             </div>
             <div class="services-grid">
                 <div class="service-card featured">
+                    <img class="service-image" src="assets/coffee-products.svg" alt="咖啡机、咖啡豆与餐饮设备产品图">
                     <div class="service-number">01</div>
-                    <h3>进出口贸易</h3>
-                    <p>专业的进出口代理服务，涵盖商品采购、报关报检、物流运输等全流程</p>
+                    <h3 data-i18n="service1.title">咖啡与设备采购</h3>
+                    <p data-i18n="service1.desc">覆盖咖啡机、咖啡豆及餐饮设备的寻源、报价、样品和订单沟通</p>
                     <ul class="service-list">
-                        <li>商品采购</li>
-                        <li>国际物流</li>
-                        <li>海关清关</li>
+                        <li data-i18n="service1.item1">咖啡机</li>
+                        <li data-i18n="service1.item2">咖啡豆</li>
+                        <li data-i18n="service1.item3">餐饮设备</li>
                     </ul>
                 </div>
                 <div class="service-card">
+                    <img class="service-image" src="assets/quality-control.svg" alt="供应链跟进与质量检查视觉图">
                     <div class="service-number">02</div>
-                    <h3>供应链服务</h3>
-                    <p>优化供应链管理，降低成本，提高效率</p>
+                    <h3 data-i18n="service2.title">供应链跟进</h3>
+                    <p data-i18n="service2.desc">协助确认供应商、生产周期、包装标准和出货准备</p>
                     <ul class="service-list">
-                        <li>供应商管理</li>
-                        <li>库存优化</li>
-                        <li>需求预测</li>
+                        <li data-i18n="service2.item1">供应商沟通</li>
+                        <li data-i18n="service2.item2">样品确认</li>
+                        <li data-i18n="service2.item3">订单进度</li>
                     </ul>
                 </div>
                 <div class="service-card">
+                    <img class="service-image" src="assets/logistics-export.svg" alt="出口物流与交付协同视觉图">
                     <div class="service-number">03</div>
-                    <h3>贸易咨询</h3>
-                    <p>专业的贸易咨询与合规服务</p>
+                    <h3 data-i18n="service3.title">出口交付协同</h3>
+                    <p data-i18n="service3.desc">支持质量检查、出口资料、物流节点和目的地交付沟通</p>
                     <ul class="service-list">
-                        <li>市场调研</li>
-                        <li>合规咨询</li>
-                        <li>风险评估</li>
+                        <li data-i18n="service3.item1">质量跟进</li>
+                        <li data-i18n="service3.item2">出口文件</li>
+                        <li data-i18n="service3.item3">物流衔接</li>
                     </ul>
                 </div>
             </div>
@@ -167,25 +177,25 @@
     <section id="advantages" class="advantages">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">核心优势</span>
-                <h2 class="section-title">为什么选择我们</h2>
+                <span class="section-tag" data-i18n="advantages.tag">核心优势</span>
+                <h2 class="section-title" data-i18n="advantages.title">为什么选择我们</h2>
             </div>
             <div class="advantages-content">
                 <div class="advantage-item">
                     <div class="advantage-number">20+</div>
-                    <div class="advantage-label">年行业经验</div>
+                    <div class="advantage-label" data-i18n="advantage1">年行业经验</div>
                 </div>
                 <div class="advantage-item">
                     <div class="advantage-number">30+</div>
-                    <div class="advantage-label">合作国家地区</div>
+                    <div class="advantage-label" data-i18n="advantage2">合作国家地区</div>
                 </div>
                 <div class="advantage-item">
                     <div class="advantage-number">500+</div>
-                    <div class="advantage-label">成功案例</div>
+                    <div class="advantage-label" data-i18n="advantage3">成功案例</div>
                 </div>
                 <div class="advantage-item">
                     <div class="advantage-number">99%</div>
-                    <div class="advantage-label">客户满意度</div>
+                    <div class="advantage-label" data-i18n="advantage4">客户满意度</div>
                 </div>
             </div>
         </div>
@@ -195,9 +205,9 @@
     <section class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2>开启您的贸易新旅程</h2>
-                <p>无论您是想要拓展海外市场，还是寻找优质供应商，我们都能为您提供专业的解决方案</p>
-                <a href="#contact" class="btn btn-primary btn-large">立即咨询</a>
+                <h2 data-i18n="cta.title">告诉我们您的采购需求</h2>
+                <p data-i18n="cta.desc">产品类型、数量、目标市场和交付时间越清楚，我们越能快速判断供应方案</p>
+                <a href="#contact" class="btn btn-primary btn-large" data-i18n="cta.button">填写咨询表单</a>
             </div>
         </div>
     </section>
@@ -208,7 +218,7 @@
             <div class="contact-grid">
                 <div class="contact-info">
                     <h3 data-i18n="contact.title">联系我们</h3>
-                    <p data-i18n="contact.desc">期待与您的合作，共创贸易新未来</p>
+                    <p data-i18n="contact.desc">请留下您的采购需求，我们会根据产品类型、数量、目标市场和交付时间尽快反馈。</p>
                     <div class="contact-list">
                         <div class="contact-item">
                             <div class="contact-icon">
@@ -218,8 +228,8 @@
                                 </svg>
                             </div>
                             <div class="contact-text">
-                                <strong>地址</strong>
-                                <span>浙江省杭州市西湖区</span>
+                                <strong data-i18n="contact.address.label">地址</strong>
+                                <span data-i18n="contact.address.value">浙江省杭州市西湖区</span>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -229,7 +239,7 @@
                                 </svg>
                             </div>
                             <div class="contact-text">
-                                <strong>邮箱</strong>
+                                <strong data-i18n="contact.email.label">邮箱</strong>
                                 <span>generalmanager@blackboxgiant.com</span>
                             </div>
                         </div>
@@ -240,74 +250,6 @@
                                 </svg>
                             </div>
                             <div class="contact-text">
-                                <strong>电话</strong>
+                                <strong data-i18n="contact.phone.label">电话</strong>
                                 <span>+86 13916818604</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                   <form id="contactForm" action="mailto:generalmanager@blackboxgiant.com" method="GET">
-                        <div class="form-group">
-                            <label for="name" data-i18n="contact.name">您的姓名</label>
-                            <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" data-i18n="contact.email">联系邮箱</label>
-                            <input type="email" id="email" name="email" placeholder="请输入您的邮箱" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="company" data-i18n="contact.company">公司名称</label>
-                            <input type="text" id="company" name="company" placeholder="请输入公司名称">
-                        </div>
-                        <div class="form-group">
-                            <label for="message" data-i18n="contact.message">咨询内容</label>
-                            <textarea id="message" name="message" rows="4" placeholder="请描述您的需求..."></textarea>
-                        </div>
-                       <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.send">发送咨询</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 页脚 -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="logo">
-                       <img src="logo.jpg" alt="Logo" style="width:36px; height:36px; object-fit:cover; border-radius:4px;">
-                        <span>黑盒子</span>
-                    </div>
-                    <p>黑盒子（杭州）贸易有限公司<br>专业贸易服务，连接全球商机</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-col">
-                        <h4>快速链接</h4>
-                        <ul>
-                            <li><a href="#about">关于我们</a></li>
-                            <li><a href="#services">业务范围</a></li>
-                            <li><a href="#advantages">核心优势</a></li>
-                            <li><a href="#contact">联系我们</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>服务支持</h4>
-                        <ul>
-                            <li><a href="#">进出口贸易</a></li>
-                            <li><a href="#">供应链服务</a></li>
-                            <li><a href="#">贸易咨询</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-               <p data-i18n="footer.copyright">© 2026 黑盒子（杭州）贸易有限公司 版权所有</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
